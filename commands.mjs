@@ -8,7 +8,6 @@ function getMax(arr, compare) {
     }
     i++;
   }
-
   return max;
 }
 
@@ -18,9 +17,9 @@ function getMax(arr, compare) {
 function search(arr, condition) {
 for( const item of arr){
 if (condition(item)){
+ return item; 
   }
-}
-return item;
+ }
 }
 
 
