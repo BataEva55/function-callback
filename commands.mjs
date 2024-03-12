@@ -12,6 +12,20 @@ function getMax(arr, compare) {
   return max;
 }
 
+// condition(album)---> true/false
+// eg:(album) => ==="Back in Black"--->true
+
+function search(arr, condition) {
+for( const item of arr){
+if (condition(item)){
+  }
+}
+return item;
+}
+
+
+
+
 function getMin(arr, compare) {
   let min = arr[0];
   let i = 1;
@@ -67,8 +81,11 @@ export function getAlbumWithFewestGenres(albums) {
 }
 
 export function getAlbumWithYearOf(albums, byYear) {
-  const album = searchByKeyValue(albums, 'year', byYear);
-  console.log('By Year', album.title);
+  const album = search(albums, byYear){
+  return album.year === byYear;
+}
+const album = search(albums, byYear);
+console.log("By Year", album.title)
 }
 
 export function getAlbumWithArtist(albums, artist) {
